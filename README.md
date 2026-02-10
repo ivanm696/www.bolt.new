@@ -1,144 +1,50 @@
 # www.bolt.new
 https://www.bolt.new
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolt.new | Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #3b82f6;
-            --secondary: #6366f1;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text: #f8fafc;
-        }
+# ⚡ Bolt.new Dashboard
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at top left, #1e293b, #0f172a);
-            color: var(--text);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+Центральная панель управления (Dashboard) для быстрого доступа к сервисам экосистемы Bolt. Проект представляет собой современную, адаптивную статическую страницу с минималистичным дизайном в темных тонах.
 
-        .card {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-            width: 100%;
-            max-width: 450px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
+## 🚀 Ссылка на проект
+Посмотреть работающую страницу можно здесь:  
+👉 [https://ivanm696.github.io/www.bolt.new/](https://ivanm696.github.io/www.bolt.new/)
 
-        .logo-circle {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 20px;
-            margin: 0 auto 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
-        }
+---
 
-        h1 { margin: 0 0 10px; font-size: 28px; }
-        p { color: #94a3b8; margin-bottom: 30px; font-size: 15px; }
+## ✨ Особенности
+* **Современный UI**: Использование CSS-градиентов, переменных (`:root`) и эффектов размытия.
+* **Интерактивность**: Плавные анимации при наведении на элементы (hover effects).
+* **Адаптивность**: Панель корректно отображается как на ПК, так и на мобильных устройствах.
+* **Легковесность**: Весь код написан на чистом HTML и CSS без использования тяжелых библиотек.
 
-        .links-grid {
-            display: grid;
-            gap: 12px;
-            margin-bottom: 30px;
-        }
+## 🛠 Технологии
+* **HTML5**: Семантическая структура.
+* **CSS3**: Flexbox, CSS Grid, Custom Properties.
+* **Google Fonts**: Шрифт Inter для лучшей читаемости.
 
-        .link-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 12px;
-            text-decoration: none;
-            color: var(--text);
-            font-weight: 600;
-            transition: all 0.2s;
-            border: 1px solid transparent;
-        }
+---
 
-        .link-item:hover {
-            background: rgba(255,255,255,0.1);
-            border-color: var(--primary);
-            transform: translateY(-2px);
-        }
+## 📂 Структура проекта
+* `index.html` — основной файл с разметкой и стилями.
+* `.github/workflows/` — автоматизация для деплоя на GitHub Pages.
+* `bolt.new.txt` — сопроводительная документация/заметки.
 
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: #10b981;
-            border-radius: 50%;
-            box-shadow: 0 0 8px #10b981;
-        }
+## ⚙️ Как использовать у себя
 
-        .contact-box {
-            background: rgba(59, 130, 246, 0.1);
-            padding: 15px;
-            border-radius: 12px;
-            font-size: 14px;
-            color: var(--primary);
-            border: 1px dashed var(--primary);
-        }
+1.  **Клонируйте репозиторий:**
+    ```bash
+    git clone [https://github.com/ivanm696/www.bolt.new.git](https://github.com/ivanm696/www.bolt.new.git)
+    ```
+2.  **Откройте файл:**
+    Просто откройте `index.html` в любом браузере.
 
-        footer {
-            margin-top: 25px;
-            font-size: 12px;
-            color: #64748b;
-        }
-    </style>
-</head>
-<body>
+3.  **Кастомизация:**
+    Вы можете легко изменить ссылки в блоке `.links-grid`, отредактировав атрибуты `href` в файле `index.html`.
 
-    <div class="card">
-        <div class="logo-circle">⚡</div>
-        <h1>Bolt.new</h1>
-        <p>Центральная панель управления вашими сервисами</p>
+---
 
-        <div class="links-grid">
-            <a href="https://bolt.new" class="link-item">
-                <span>Главная страница</span>
-                <div class="status-dot"></div>
-            </a>
-            <a href="https://shop.bolt.new" class="link-item">
-                <span>Маркетплейс</span>
-                <div class="status-dot"></div>
-            </a>
-            <a href="https://support.bolt.new" class="link-item">
-                <span>Техподдержка</span>
-                <div class="status-dot"></div>
-            </a>
-            <a href="https://status.bolt.new" class="link-item">
-                <span>Мониторинг сети</span>
-                <div class="status-dot"></div>
-            </a>
-        </div>
+## 📞 Контакты
+Если у вас возникли вопросы, вы можете связаться с поддержкой по адресу:  
+**support@bolt.new**
 
-        <div class="contact-box">
-            Нужна помощь? <br> 
-            <strong>support@bolt.new</strong>
-        </div>
-
-        <footer>
-            Данные обновлены на основе DNS-записи от 2026-01-25
-        </footer>
-    </div>
-
-</body>
-</html>
+---
+*Данные актуальны на основе конфигурации от 2026 года.*
