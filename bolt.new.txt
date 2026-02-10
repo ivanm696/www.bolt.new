@@ -1,0 +1,72 @@
+;;
+;; Domain:     bolt.new.
+;; Exported:   2026-01-25 16:12:44
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+bolt.new	3600	IN	SOA	benedict.ns.cloudflare.com. dns.cloudflare.com. 2052102416 10000 2400 604800 3600
+
+;; NS Records
+bolt.new.	86400	IN	NS	benedict.ns.cloudflare.com.
+bolt.new.	86400	IN	NS	joselyn.ns.cloudflare.com.
+
+;; A Records
+bolt.new.	1	IN	A	104.26.7.237 ; cf_tags=cf-proxied:true
+bolt.new.	1	IN	A	104.26.6.237 ; cf_tags=cf-proxied:true
+bolt.new.	1	IN	A	172.67.73.66 ; cf_tags=cf-proxied:true
+shop.bolt.new.	1	IN	A	34.117.223.165 ; cf_tags=cf-proxied:true
+support.bolt.new.	1	IN	A	104.26.6.237 ; cf_tags=cf-proxied:true
+support.bolt.new.	1	IN	A	172.67.73.66 ; cf_tags=cf-proxied:true
+support.bolt.new.	1	IN	A	104.26.7.237 ; cf_tags=cf-proxied:true
+www.bolt.new.	1	IN	A	104.26.7.237 ; cf_tags=cf-proxied:true
+www.bolt.new.	1	IN	A	172.67.73.66 ; cf_tags=cf-proxied:true
+www.bolt.new.	1	IN	A	104.26.6.237 ; cf_tags=cf-proxied:true
+
+;; AAAA Records
+bolt.new.	1	IN	AAAA	2606:4700:20::681a:6ed ; cf_tags=cf-proxied:true
+bolt.new.	1	IN	AAAA	2606:4700:20::ac43:4942 ; cf_tags=cf-proxied:true
+bolt.new.	1	IN	AAAA	2606:4700:20::681a:7ed ; cf_tags=cf-proxied:true
+www.bolt.new.	1	IN	AAAA	2606:4700:20::ac43:4942 ; cf_tags=cf-proxied:true
+www.bolt.new.	1	IN	AAAA	2606:4700:20::681a:7ed ; cf_tags=cf-proxied:true
+www.bolt.new.	1	IN	AAAA	2606:4700:20::681a:6ed ; cf_tags=cf-proxied:true
+
+;; CNAME Records
+pm-bounces.bolt.new.	1	IN	CNAME	pm.mtasv.net. ; cf_tags=cf-proxied:true
+status.bolt.new.	1	IN	CNAME	statuspage.incident.io. ; cf_tags=cf-proxied:true
+
+;; MX Records
+bolt.new.	1	IN	MX	5 alt2.aspmx.l.google.com.
+bolt.new.	1	IN	MX	5 alt1.aspmx.l.google.com.
+bolt.new.	1	IN	MX	10 alt4.aspmx.l.google.com.
+bolt.new.	1	IN	MX	10 alt3.aspmx.l.google.com.
+bolt.new.	1	IN	MX	1 aspmx.l.google.com.
+
+;; TXT Records
+_atproto.bolt.new.	1	IN	TXT	"did=did:plc:cldvrketb4yt5sbyx6vo5zrz"
+bolt.new.	1	IN	TXT	"v=spf1 include:_spf.google.com include:45403856.spf03.hubspotemail.net -all"
+bolt.new.	1	IN	TXT	"slack-domain-verification=WygKS53HVC89wD364pljsC62Cnnp58gNerpAjSII"
+bolt.new.	1	IN	TXT	"google-site-verification=Wsk42_qZh5E-NOchFjDzFWwxeOLXDQvfgbj-zr3phEc"
+bolt.new.	1	IN	TXT	"google-site-verification=96wvmghdIe3MaW_yrNw-4cAmeWOUGVr9aeKeAVXd2H8"
+_dmarc.bolt.new.	1	IN	TXT	"v=DMARC1; p=none; rua=mailto:eccae4a77eef461e9220ef9ead526bee@dmarc-reports.cloudflare.net;"
+google._domainkey.bolt.new.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqdgxFsFcTDCjsvW76JC5Cl0ohe9Tgm7xdenKHVvsLHjebe61HsmWZCz0uHa6GrZiWhLmdELJpbqy5dVBpuMKwdXbRIgBXEnDvnH7hS7VX4Kfca0Q1LbmXbw60NffBqTPH2Gf74XyO0UkyERrXWEN+kXJnxdY5CBU6tx1uxQSy4XOnhnTu6tQopNQIw5AJveee" "hWvaQbAJ7wUczbmNK3Cni28iUU4ijeWUzoZ3IYgO8h7EHxSMthbvPOnOn0N7aLGrwFn8WaVruWmzZzlOzjlPMqHWNHArzsRu/v1VFoZ73EydMRJL73VDYSeBKawGZNypQJuXmfpDxtqmk9TOL3OdwIDAQAB"
+_vercel.bolt.new.	1	IN	TXT	"vc-domain-verify=status.bolt.new,9bc7869efb7bda3c7219"
